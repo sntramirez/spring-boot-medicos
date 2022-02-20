@@ -1,0 +1,30 @@
+package com.integracion.crud.security.dtow;
+
+import java.io.Serializable;
+
+import javax.validation.constraints.NotBlank;
+
+public class LoginUsuarioDto implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	@NotBlank
+	private String nombreUsuario;
+	@NotBlank
+	private String password;
+
+	public String getNombreUsuario() {
+		return nombreUsuario;
+	}
+
+	public void setNombreUsuario(String nombreUsuario) {
+		this.nombreUsuario = nombreUsuario;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+}

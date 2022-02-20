@@ -1,0 +1,5 @@
+package com.integracion.crud.security.enums;
+
+public enum RolNombre {
+
+}

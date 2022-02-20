@@ -1,0 +1,16 @@
+package com.integracion.crud.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="TB_TELEFONOS")
+public class Phones {
+	@Column(name="CODIGO")
+    private Long id;
+	private String number;
+	private String citycode;
+	private String contrycode;
+
+}

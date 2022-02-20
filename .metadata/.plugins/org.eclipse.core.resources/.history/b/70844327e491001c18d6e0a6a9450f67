@@ -1,0 +1,30 @@
+regexp.email = ^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$
+regexp.password = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,15}$/
+
+mensaje.error.campo = required data
+mensaje.error.dato = repeated data
+mensaje.error.mail =El correo ya registrado
+mensaje.campo.mail =email
+
+ 
+mensaje.error.not.blank.name = El atributo name no puede estar en blanco
+mensaje.error.not.null.name = El atributo name es obligatorio
+mensaje.error.size.name = El atributo name debe tener una longitud min 3 max 15
+valor.size.min.name = 3
+valor.size.max.name = 15
+
+mensaje.error.not.blank.email = El atributo email no puede estar en blanco
+mensaje.error.not.null.email = El atributo email es obligatorio
+mensaje.error.size.email =  El atributo email debe tener una longitud min 3 max 10
+mensaje.error.regexp.email = El atributo email no es correcto su formato
+valor.size.min.email = 5
+valor.size.max.email = 10
+
+
+mensaje.error.not.blank.password = El atributo password no puede estar en blanco
+mensaje.error.not.null.password = El atributo password es obligatorio
+mensaje.error.size.password =  El atributo password debe tener una longitud min 8 max 15
+mensaje.error.regexp.password = El atributo password no es correcto su formato
+valor.size.min.password = 8
+valor.size.max.password = 15
+

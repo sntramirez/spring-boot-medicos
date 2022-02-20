@@ -1,0 +1,12 @@
+package com.integracion.crud.model.repository;
+
+public class Snippet {
+	public Set<Rol> getRoles() {
+	    return roles;
+	}
+	
+	public void setRoles(Set<Rol> roles) {
+	    this.roles = roles;
+	}
+}
+

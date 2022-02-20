@@ -1,0 +1,8 @@
+package com.integracion.crud.security.jwt;
+
+public class Snippet {
+	public static void main(String[] args) {
+		JWTAuthorizationFilter
+	}
+}
+

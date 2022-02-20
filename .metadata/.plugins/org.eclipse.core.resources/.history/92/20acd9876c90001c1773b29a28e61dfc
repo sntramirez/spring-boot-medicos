@@ -1,0 +1,28 @@
+package com.integracion.crud.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity (name="TB_USUARIO")
+public class User {
+	@Id
+	@Column(name="CODIGO")
+	private Long id;
+	@Column(name ="NOMBRE_USUARIO")
+	private String name;
+	@Column(name="MAIL")
+	private String email;
+	@Column(name="PASSWORD")
+	private String password;
+
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+}

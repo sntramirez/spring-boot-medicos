@@ -1,0 +1,7 @@
+package com.integracion.crud.repository;
+import com.integracion.crud.model.User;
+
+
+public class UserRepository extends JpaRepository <User,Long> {
+
+}

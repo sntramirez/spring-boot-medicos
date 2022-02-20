@@ -1,0 +1,10 @@
+package com.integracion.crud.util;
+
+import org.springframework.context.annotation.PropertySource;
+
+
+public class Constants {
+
+	public final static String  REGEXP_EMAIL="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$";  
+	public final static String  REGEXP_PASSWORD="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\\\d)(?=.*[$@$!%*?&])([A-Za-z\\\\d$@$!%*?&]|[^ ]){8,15}$/";
+}

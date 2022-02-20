@@ -1,0 +1,59 @@
+1645154266364	Delete element
+1645155311707	Rename type 'Usuario'
+1645221772544	Rename type 'UserDetailsServiceImpl'
+1645221821786	Rename type 'UserDetailsService'
+1645226186873	Rename package 'com.integracion.crud.security.jwt'
+1645226199572	Rename package 'com.integracion.crud.security.jwts'
+1645228170068	Delete element
+1645228174809	Delete element
+1645231862805	Delete element
+1645236917399	Delete element
+1645238907217	Delete element
+1645239241631	Delete elements
+1645239281404	Rename package 'com.tutorial.crud.security.filter'
+1645239289425	Rename package 'com.tutorial.crud.security.filters'
+1645239480816	Rename package 'com.tutorial.crud.security.filter'
+1645239801942	Rename package 'com.integracion.crud.security.controller'
+1645239889767	Rename type 'AuthController'
+1645240204855	Rename package 'com.integracion.crud.security.entity'
+1645240252468	Rename type 'NewUser'
+1645240278539	Rename type 'Mensaje'
+1645240311227	Delete elements
+1645240346222	Rename package 'com.integracion.crud.models.entity'
+1645240385019	Delete element
+1645240399132	Rename package 'com.integracion.crud.dto'
+1645240416911	Rename package 'com.integracion.crud.dtos'
+1645240704595	Rename type 'Phones'
+1645240722846	Rename type 'User'
+1645240747173	Rename type 'UsuarioPrincipal'
+1645240810489	Rename type 'LoginUsuario'
+1645240840201	Delete element
+1645241083094	Delete element
+1645241095329	Rename package 'com.integracion.crud.security.dto'
+1645241113742	Rename package 'com.integracion.crud.security.dtow'
+1645241603268	Rename package 'com.integracion.crud.repository'
+1645241616780	Rename package 'com.integracion.crud.security.service'
+1645241721413	Delete elements
+1645241735061	Rename package 'com.integracion.crud.security.service'
+1645241745971	Rename package 'com.integracion.crud.security.services'
+1645241969884	Rename package 'com.integracion.crud.model.repository'
+1645242075121	Rename package 'com.integracion.crud.model.service'
+1645242103541	Rename type 'UserRepository'
+1645242175478	Rename type 'UsuarioService'
+1645242516636	Rename type 'UsuarioDao'
+1645242550945	Rename package 'com.integracion.crud.model.dao.impl'
+1645242568746	Rename package 'com.integracion.crud.model.dao.service'
+1645242593995	Rename type 'UsuarioDaoImpl'
+1645243702236	Rename compilation unit 'Snippet.java'
+1645243724988	Rename type 'NuevoUsuarioDto'
+1645277608832	Rename package 'com.integracion.crud.mapper'
+1645277620848	Rename package 'com.integracion.crud.mappers'
+1645277661755	Rename type 'CommentMapper'
+1645284585934	Copy compilation unit
+1645284630028	Rename type 'UsuarioRequest'
+1645284655500	Rename type 'UsuarioDto'
+1645284692366	Rename type 'MensajeDto'
+1645284724716	Rename type 'TelefonoDto'
+1645305676659	Copy compilation unit
+1645309624096	Copy compilation unit
+1645310224842	Rename type 'UsuarioRequestValidacion'

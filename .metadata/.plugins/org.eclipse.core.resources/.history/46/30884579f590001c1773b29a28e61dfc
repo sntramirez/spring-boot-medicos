@@ -1,0 +1,13 @@
+package com.integracion.crud.util;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
+
+@PropertySource("classpath:mensajes.properties")
+public class Constants {
+	
+	@Autowired
+	Environment env;
+	public final String  REGEXP_MAIL="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$";  
+}

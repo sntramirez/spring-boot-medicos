@@ -1,0 +1,19 @@
+codigo.error.campo = required data
+codigo.error.dato = repeated data
+codigo.error.auth = authentication
+codigo.error.interno = internal
+
+
+jwt.secret = secret
+jwt.expiration = 36000
+
+mensaje.error.mail =El correo ya registrado
+mensaje.campo.mail =email
+
+
+mensaje.error.auth = Error de autenticación: mail o password incorrecto
+mensaje.campo.auth =  
+
+
+mensaje.error.interno = Error al intentar acceder
+mensaje.campo.interno =  

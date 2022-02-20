@@ -1,0 +1,34 @@
+package com.integracion.crud.security.service;
+
+
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.integracion.crud.model.User;
+import com.integracion.crud.model.entity.UsuarioPrincipal;
+
+@Service("jpaUserDetailsService")
+public class JpaUserDetailsService implements UserDetailsService {
+
+	private final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
+
+	@Autowired
+	UsuarioService usuarioService;
+
+	@Override
+	@Transactional(readOnly = true)
+	public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
+		LOGGER.error("-------***********-------------->" + email);
+		//User usuario = new User("santiago", "snt.ramirez@gmail.com", "hunter2"); // usuarioService.getByEmail(email).get();
+		User usuario = usuarioService.getByEmail(email).get();
+		return UsuarioPrincipal.build(usuario);
+	}
+
+}

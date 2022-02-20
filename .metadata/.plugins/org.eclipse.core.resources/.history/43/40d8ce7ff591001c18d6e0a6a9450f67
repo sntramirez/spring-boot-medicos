@@ -1,0 +1,12 @@
+codigo.error.campo = required data
+codigo.error.dato = repeated data
+codigo.error.aut = authentication
+
+
+jwt.secret = secret
+jwt.expiration = 36000
+
+mensaje.error.mail =El correo ya registrado
+mensaje.campo.mail =email
+
+

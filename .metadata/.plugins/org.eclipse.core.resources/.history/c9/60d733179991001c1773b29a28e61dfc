@@ -1,0 +1,64 @@
+package com.integracion.crud.dto;
+
+import java.io.Serializable;
+import java.util.Collection;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+
+import com.integracion.crud.util.Constants;
+public class UsuarioResponse implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	@NotBlank(message = "yyy")
+	@NotNull(message = "name attribute is mandatory")
+	private String name;
+
+	// @Pattern(regexp = "${regexp.email}")
+	@Pattern(regexp = Constants.REGEXP_EMAIL)
+	@NotBlank(message = "email attribute is mandatory")
+	private String email;
+
+	@NotNull
+	// @Pattern(regexp = Constants.REGEXP_PASSWORD)
+	@NotBlank(message = "password attribute is mandatory")
+	private String password;
+
+	private Collection<TelefonoDto> phones;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public Collection<TelefonoDto> getPhones() {
+		return phones;
+	}
+
+	public void setPhones(Collection<TelefonoDto> phones) {
+		this.phones = phones;
+	}
+
+  
+}

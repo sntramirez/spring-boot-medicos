@@ -1,0 +1,112 @@
+package com.integracion.crud.dto;
+
+import java.io.Serializable;
+import java.util.Collection;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
+
+@PropertySource("classpath:mensajes.properties")
+public class UsuarioRequest implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
+	@Value("${regexp.email}")
+	public static final String regexpEmail = "";
+	@Value("${regexp.password}")
+	public static final String regexpPassword = "";
+	@Value("${mensaje.error.not.blank.name}")
+	public static final String mensajeErrorNotBlankName = "";
+	@Value("${mensaje.error.not.null.name}")
+	public static final String mensajeErrorNotNullName = "";
+	@Value("${mensaje.error.size.name}")
+	public static final String mensajeErrorSizeName = "";
+	@Value("${valor.size.min.name}")
+	public static final int valorSizeMinName = 0;
+	@Value("${valor.size.max.name}")
+	public static final int valorSizeMaxName = 0;
+	@Value("${mensaje.error.not.blank.email}")
+	public static final String mensajeErrorNotBlankEmail = "";
+	@Value("${mensaje.error.not.null.email}")
+	public static final String mensajeErrorNotNullEmail = "";
+	@Value("${mensaje.error.size.emai}")
+	public static final String mensajeErrorSizeEmail = "";
+	@Value("${mensaje.error.regexp.email}")
+	public  final String mensajeErrorRegexpEmail = "";
+	@Value("${valor.size.min.email}")
+	public static final int valorSizeMinEmail = 0;
+	@Value("${valor.size.max.email}")
+	public static final int valorSizeMaxEmail = 0;
+	@Value("${mensaje.error.not.blank.password}")
+	public static final String mensajeErrorNotBlankPassword = "";
+	@Value("${mensaje.error.not.null.password}")
+	public static final String mensajeErrorNotNullPassword = "";
+	@Value("${mensaje.error.size.password}")
+	public static final String mensajeErrorSizePassword = "";
+	@Value("${mensaje.error.regexp.password}")
+	public static final String mensajeErrorRegexpPassword = "";
+	@Value("${valor.size.min.password}")
+	public static final int valorSizeMinPassword = 0;
+	@Value("${valor.size.max.password}")
+	public static final int valorSizeMaxPassword = 0;
+
+
+
+	@NotBlank(message = mensajeErrorNotBlankName)
+	@NotNull(message = mensajeErrorNotNullName)
+	//@Size(min = valorSizeMinName, max = valorSizeMaxName, message = mensajeErrorSizeName)
+	private String name;
+
+	@NotBlank(message = mensajeErrorNotBlankEmail)
+	@NotNull(message = mensajeErrorNotNullEmail)
+	//@Size(min = valorSizeMinEmail, max = valorSizeMaxEmail, message = mensajeErrorSizeEmail)
+	@Pattern(regexp = regexpEmail, message = mensajeErrorRegexpEmail)
+	private String email;
+
+	@NotBlank(message = mensajeErrorNotBlankPassword)
+	@NotNull(message = mensajeErrorNotNullPassword)
+	//@Size(min = valorSizeMinPassword, max = valorSizeMaxPassword, message = mensajeErrorSizePassword)
+	//@Pattern(regexp = regexpPassword, message = mensajeErrorRegexpPassword)
+	private String password;
+
+	private Collection<TelefonoRequest> phones;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public Collection<TelefonoRequest> getPhones() {
+		return phones;
+	}
+
+	public void setPhones(Collection<TelefonoRequest> phones) {
+		this.phones = phones;
+	}
+
+
+ 
+
+}

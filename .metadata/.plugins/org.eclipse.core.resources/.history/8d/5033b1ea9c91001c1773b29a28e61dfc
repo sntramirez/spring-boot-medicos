@@ -1,0 +1,20 @@
+package com.integracion.crud.dto;
+
+import java.io.Serializable;
+import java.util.Date;
+import java.util.UUID;
+
+public class UsuarioResponse implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	private UUID id;
+	private Date create;
+	private Date modified;
+	private String last_login;
+	private String token;
+	private boolean isactive;
+	
+	
+
+}

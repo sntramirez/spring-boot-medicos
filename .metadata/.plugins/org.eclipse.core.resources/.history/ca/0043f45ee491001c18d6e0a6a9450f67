@@ -1,0 +1,17 @@
+package com.integracion.crud.util;
+
+public class Constants {
+
+	public final static String REGEXP_EMAIL = "^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$";
+	public final static String REGEXP_PASSWORD = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\\\d)(?=.*[$@$!%*?&])([A-Za-z\\\\d$@$!%*?&]|[^ ]){8,15}$/";
+	public static final int VALOR_SIZE_MIN_NAME = 3;
+	public static final int VALOR_SIZE_MAX_NAME = 15;
+
+	public static final int VALOR_SIZE_MIN_EMAIL = 5;
+	public static final int VALOR_SIZE_MAX_EMAIL = 10;
+
+	public static final int VALOR_SIZE_MIN_PASSWORD = 8;
+	public static final int VALOR_SIZE_MAX_PASSWORD = 15;
+	public final static String MENSAJE_ERROR_REGEXP_EMAIL = "El atributo email, no es correcto su formato";
+	public final static String MENSAJE_ERROR_REGEXP_PASSWORD = "El atributo password no es correcto su formato";
+}

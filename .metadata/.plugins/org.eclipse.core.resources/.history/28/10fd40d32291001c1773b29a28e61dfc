@@ -1,0 +1,12 @@
+spring.datasource.url=jdbc:h2:mem://192.168.56.1:8082/testdb?useSSL=false
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.h2.console.enabled=true
+
+logging.level.org.springframework=DEBUG
+logging.level.com.howtodoinjava=DEBUG
+
+# security
+jwt.secret = secret
+jwt.expiration = 36000

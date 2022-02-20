@@ -1,0 +1,75 @@
+package com.integracion.crud.dto;
+
+import java.io.Serializable;
+import java.util.Collection;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.stereotype.Component;
+
+import com.integracion.crud.util.Constants;
+@Component
+@PropertySource("classpath:mensajes.properties")
+public class UsuarioRequest  {
+
+	@Value("${regexp.email}")
+	public  final String regexpEmail = "";
+	
+
+
+	@NotBlank(message = "yyy")
+	@NotNull(message = "name attribute is mandatory")
+	private String name;
+
+	@Pattern(regexp = Constants.REGEXP_EMAIL , message = "")
+	@NotBlank(message = "email attribute is mandatory")
+	private String email;
+
+	@NotNull
+	@NotBlank(message = "password attribute is mandatory")
+	private String password;
+
+	private Collection<TelefonoRequest> phones;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public Collection<TelefonoRequest> getPhones() {
+		return phones;
+	}
+
+	public void setPhones(Collection<TelefonoRequest> phones) {
+		this.phones = phones;
+	}
+
+
+	
+	 
+
+}

@@ -1,0 +1,7 @@
+codigo.error.campo = required data
+codigo.error.dato = repeated data
+
+mensaje.error.mail =El correo ya registrado
+mensaje.campo.mail =email
+
+

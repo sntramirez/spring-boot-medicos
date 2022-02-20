@@ -1,0 +1,52 @@
+package com.integracion.crud.dto;
+
+import java.io.Serializable;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
+
+@PropertySource("classpath:mensajes.properties")
+public class UsuarioRequestValidacion implements Serializable {
+
+	protected static final long serialVersionUID = 1L;
+	@Value("${regexp.email}")
+	protected static final String regexpEmail = "";
+
+	@Value("${regexp.email}")
+	protected static final String regexpPassword = "";
+	@Value("${regexp.email}")
+	protected static final String mensajeErrorNotBlankName = "";
+	@Value("${mensaje.error.not.null.name}")
+	protected static final String mensajeErrorNotNullName = "";
+	@Value("${regexp.email}")
+	protected static final String mensajeErrorSizeName = "";
+	@Value("${regexp.email}")
+	protected static final int valorSizeMinName =0;
+	@Value("${regexp.email}")
+	protected static final String valorSizeMaxName = "";
+	@Value("${mensaje.error.not.blank.email}")
+	protected static final String mensajeErrorNotBlankEmail = "";
+	@Value("${mensaje.error.not.null.email}")
+	protected static final String mensajeErrorNotNullEmail = "";
+	@Value("${mensaje.error.size.emai}")
+	protected static final String mensajeErrorSizeEmail = "";
+	@Value("${mensaje.error.regexp}")
+	protected static final String mensajeErrorRegexp = "";
+	@Value("${valor.size.min.email}")
+	protected static final String valorSizeMinEmail = "";
+	@Value("${valor.size.max.email}")
+	protected static final String valorSizeMaxEmail = "";
+	@Value("${mensaje.error.not.blank.password}")
+	protected static final String mensajeErrorNotBlankPassword = "";
+	@Value("${mensaje.error.not.null.password}")
+	protected static final String mensajeErrorNotNullPassword = "";
+	@Value("${mensaje.error.size.password}")
+	protected static final String mensajeErrorSizePassword = "";
+	@Value("${mensaje.error.regexp}")
+	protected static final String mensajeErrorRegexpPassword = "";
+	@Value("${valor.size.min.password}")
+	protected static final String valorSizeMinPassword = "";
+	@Value("${valor.size.max.password}")
+	protected static final String valorSizeMaxPassword = "";
+
+}

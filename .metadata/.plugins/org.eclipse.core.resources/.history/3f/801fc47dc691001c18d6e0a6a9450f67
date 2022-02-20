@@ -1,0 +1,19 @@
+package com.integracion.crud.dto;
+
+import java.io.Serializable;
+import java.util.List;
+
+public class MensajeResponse implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	private List<String> mensaje;
+
+	public List<String> getMensaje() {
+		return mensaje;
+	}
+
+	public void setMensaje(List<String> mensaje) {
+		this.mensaje = mensaje;
+	}
+
+}

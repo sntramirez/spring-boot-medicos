@@ -1,0 +1,8 @@
+package com.integracion.crud.dto;
+
+public class TelefonoDto {
+	public static void main(String[] args) {
+		Telefono
+	}
+}
+
